@@ -130,7 +130,6 @@ const Dashboard = () => {
           <Heading
             text={
               <div className="flex items-center w-[max-content] gap-1">
-                {" "}
                 {getGreeting()},{" "}
                 {GetUserDetailsMutate.isPending ? (
                   <Loading pending={true} />

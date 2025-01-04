@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nunitosans.className} `}>
+      <body className={`${nunitosans.className}`}>
         {" "}
         <Providers>
           {" "}
