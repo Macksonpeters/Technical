@@ -5,7 +5,8 @@ import { persistStore, persistReducer } from "redux-persist";
 import storageSession from "redux-persist/lib/storage/session";
 
 const encryptor = encryptTransform({
-  secretKey: process.env.NEXT_PUBLIC_STORE_KEY,
+  // secretKey: process.env.NEXT_PUBLIC_STORE_KEY,
+  secretKey: "sety67382@#",
   onError: function (error) {
     console.log(error);
   },
