@@ -22,7 +22,6 @@ const reducer = combineReducers({
   user: userReducer,
 });
 
-
 const persistedReducer = persistReducer(persistConfig, reducer);
 
 export const store = configureStore({
@@ -33,7 +32,6 @@ export const store = configureStore({
         ignoredActions: ["persist/PERSIST"],
       },
     }),
-  devTools: process.env.NODE_ENV !== "production",
 });
 
 export const persistor = persistStore(store);
