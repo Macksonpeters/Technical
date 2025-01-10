@@ -115,7 +115,7 @@ const TransactionTable = ({ transactions }: TableProps) => {
                 <TableRow key={index}>
                   <TableCell>{item?.id}</TableCell>
                   <TableCell>{item?.loanPurpose}</TableCell>
-                  <TableCell>{item?.amount}</TableCell>
+                  <TableCell>{item?.loanAmount}</TableCell>
                   <TableCell>{item?.receiver}</TableCell>
                   <TableCell className="">
                     {item?.date &&

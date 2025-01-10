@@ -42,8 +42,8 @@ const TableSortModal = ({ isOpen, setValue, getValues }: Props) => {
           })
         : sortType === "amount"
         ? transactions?.sort((a: any, b: any) => {
-            const amountA = a?.amount;
-            const amountB = b?.amount;
+            const amountA = a?.loanAmount;
+            const amountB = b?.loanAmount;
             return amountB - amountA;
           })
         : sortType == "transactionType" &&
